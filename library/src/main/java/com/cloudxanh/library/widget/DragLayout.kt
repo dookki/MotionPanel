@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 
-class DragFrame @JvmOverloads constructor(
+class DragLayout @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : CoordinatorLayout(context, attrs, defStyleAttr) {
 

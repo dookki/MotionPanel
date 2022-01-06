@@ -10,7 +10,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.cloudxanh.library.databinding.LayoutDraggablePanelBinding
 import com.cloudxanh.library.utils.*
 import com.cloudxanh.library.widget.DragBehavior
-import com.cloudxanh.library.widget.DragFrame
+import com.cloudxanh.library.widget.DragLayout
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import kotlin.math.abs
@@ -129,7 +129,7 @@ open class MotionPanel @JvmOverloads constructor(
         mHeightWhenMaxDefault = mTempHeight
         mHeightWhenMinDefault = mHeightWhenMin
 
-        binding.frameDrag.onTouchListener = object : DragFrame.OnTouchListener {
+        binding.frameDrag.onTouchListener = object : DragLayout.OnTouchListener {
 
             private var downY = 0f
             private var deltaY = 0
